@@ -1,4 +1,4 @@
-# HomeWork2
-这是第一版原始程序，用来实现输入出生日期，判断星座、已经出生时间、距下一次生日的时间
-把origin文件夹名字改为xie
-直接运行xie.sln
+# HomeWork3
+## 打开方式：c++程序运行：origin1/xie.vcxproj  c#winform程序运行：主程序\windowsformApp8、windowsformApp8.vcxproject
+## 需要运行环境：windowsform窗体运用
+
