@@ -5,6 +5,7 @@
 #include <windows.h>
 #include <iostream>
 #include <string>
+#include <fstream>
 
 using namespace std;
 
@@ -61,6 +62,14 @@ int main()
 		cout << "财运分析: " << Money[two] << endl;
 		cout << "爱情指数：" << three + 1 << "星" << endl;
 		cout << "爱情分析: " << Love[three] << endl;
+		ofstream outfile;
+		outfile.open("data.txt", ios::binary | ios::app | ios::in | ios::out);
+		outfile << "生日：" << year1 << " . " << month1 << "." << day1<<endl;
+		outfile << "星座：" << endl;
+		outfile << M.constell[M.ran-1];
+		outfile << endl;
+		outfile << " 今日运势:" << endl<<"幸运指数：" << one + 1 << endl << "财运指数" << two + 1 << endl << "财运分析" << Money[two] << endl;
+		outfile << "爱情指数：" << three+1 <<endl<< " 爱情分析: " << Love[three] << endl;
 		string ans;
 		system("pause");
 		cout << "exit?(y/n)";
