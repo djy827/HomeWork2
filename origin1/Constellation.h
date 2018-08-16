@@ -6,81 +6,154 @@ using namespace std;
 class Constellation
 {
 public:
+	int ran;
 	void judge(int m1, int d1)
 	{
 		switch (m1)
 		{
 		case 1:
 			if (d1 >= 20)
-				cout << "Ë®Æ¿×ù£¬";
+			{
+				cout << "Ë®Æ¿×ù";
+				ran = 1;
+			}
 			else
-				cout << "Ä§ôÉ×ù£¬";
+			{
+				ran = 2;
+				cout << "Ä§ôÉ×ù";
+			}
 			break;
 		case 2:
 			if (d1 >= 19)
-				cout << "Ë«Óã×ù£¬";
+			{
+				ran = 3;
+				cout << "Ë«Óã×ù";
+			}
 			else
-				cout << "Ë®Æ¿×ù£¬";
+			{
+				ran = 1;
+				cout << "Ë®Æ¿×ù";
+			}
 			break;
 		case 3:
 			if (d1 >= 21)
-				cout << "°×Ñò×ù£¬";
+			{
+				ran = 5;
+				cout << "°×Ñò×ù";
+			}
 			else
-				cout << "Ë«Óã×ù£¬";
+			{
+				ran = 3;
+				cout << "Ë«Óã×ù";
+			}
 			break;
 		case 4:
 			if (d1 >= 20)
-				cout << "½ğÅ£×ù£¬";
+			{
+				ran = 7;
+				cout << "½ğÅ£×ù";
+			}
 			else
-				cout << "°×Ñò×ù£¬";
+			{
+				ran = 5;
+				cout << "°×Ñò×ù";
+			}
 			break;
 		case 5:
 			if (d1 >= 21)
-				cout << "Ë«×Ó×ù£¬";
+			{
+				ran = 9;
+				cout << "Ë«×Ó×ù";
+			}
 			else
-				cout << "½ğÅ£×ù£¬";
+			{
+				ran = 7;
+				cout << "½ğÅ£×ù";
+			}
 			break;
 		case 6:
 			if (d1 >= 22)
-				cout << "¾ŞĞ·×ù£¬";
+			{
+				ran = 11;
+				cout << "¾ŞĞ·×ù";
+			}
 			else
-				cout << "Ë«×Ó×ù£¬";
+			{
+				ran = 9;
+				cout << "Ë«×Ó×ù";
+			}
 			break;
 		case 7:
 			if (d1 >= 23)
-				cout << "Ê¨×Ó×ù£¬";
+			{
+				ran = 13;
+				cout << "Ê¨×Ó×ù";
+			}
 			else
-				cout << "¾ŞĞ·×ù£¬";
+			{
+				ran = 11;
+				cout << "¾ŞĞ·×ù";
+			}
 			break;
 		case 8:
 			if (d1 >= 23)
-				cout << "´¦Å®×ù£¬";
+			{
+				ran = 15;
+				cout << "´¦Å®×ù";
+			}
 			else
-				cout << "Ê¨×Ó×ù£¬";
+			{
+				ran = 13;
+				cout << "Ê¨×Ó×ù";
+			}
 			break;
 		case 9:
 			if (d1 >= 23)
-				cout << "ÌìÆ½×ù£¬";
+			{
+				ran = 17;
+				cout << "ÌìÆ½×ù";
+			}
 			else
-				cout << "´¦Å®×ù£¬";
+			{
+				ran = 15;
+				cout << "´¦Å®×ù";
+			}
 			break;
 		case 10:
 			if (d1 >= 24)
-				cout << "ÌìĞ«×ù£¬";
+			{
+				ran = 19;
+				cout << "ÌìĞ«×ù";
+			}
 			else
-				cout << "ÌìÆ½×ù£¬";
+			{
+				ran = 17;
+				cout << "ÌìÆ½×ù";
+			}
 			break;
 		case 11:
 			if (d1 >= 23)
-				cout << "ÉäÊÖ×ù£¬";
+			{
+				ran = 18;
+				cout << "ÉäÊÖ×ù";
+			}
 			else
-				cout << "ÌìĞ«×ù£¬";
+			{
+				ran = 19;
+				cout << "ÌìĞ«×ù";
+			}
 			break;
 		case 12:
 			if (d1 >= 20)
-				cout << "Ä¦ôÉ×ù£¬";
+			{
+				ran = 1;
+				cout << "Ä¦ôÉ×ù";
+			}
 			else
-				cout << "ÉäÊÖ×ù£¬";
+			{
+				ran = 18;
+				cout << "ÉäÊÖ×ù";
+			}
 			break;
 		};
 	};
