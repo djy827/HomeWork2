@@ -151,13 +151,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Birthday.h" />
     <ClInclude Include="Constellation.h" />
     <ClInclude Include="DateHandle.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Birthday.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="DateHandle.cpp" />
     <ClCompile Include="pch.cpp">

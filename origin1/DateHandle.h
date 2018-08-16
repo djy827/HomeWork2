@@ -48,10 +48,8 @@ public:
 			//确保year1年份比year2早
 			if (year1 > year2)
 			{
-				//swap进行两个值的交换
-				swap(year1, year2);
-				swap(month1, month2);
-				swap(day1, day2);
+				cout << "您还未出生" << endl;
+				return 0;
 			}
 			int d1, d2, d3;
 			if (IsLeap(year1))
@@ -70,6 +68,54 @@ public:
 					d3 += 365;
 			}
 			return d1 + d2 + d3;
+		}
+	}
+	int NextBirthday(int year1, int  month1, int  day1, int year2, int month2, int day2)
+	{
+
+		if (month1 == month2 && day1 > day2)
+		{
+			int d1, d2;
+			d1 = DayInYear(year1, month1, day1);
+			d2 = DayInYear(year2, month2, day2);
+			return d1 - d2;
+		}
+		else if (month1 == month2 && day1 == day2)
+		{
+			int d1, d2;
+			if (IsLeap(year2))
+				d2 = 366 - DayInYear(year2, month2, day2); //取得这个日期在该年还于下多少天
+			else
+				d2 = 365 - DayInYear(year2, month2, day2);
+			d1 = DayInYear(year1, month1, day1); //取得在当年中的第几天
+			return d1 + d2;
+		}
+		else if (month1 == month2 && day1 < day2)
+		{
+			int d1, d2;
+			if (IsLeap(year2))
+				d2 = 366 - DayInYear(year2, month2, day2); //取得这个日期在该年还于下多少天
+			else
+				d2 = 365 - DayInYear(year2, month2, day2);
+			d1 = DayInYear(year1, month1, day1); //取得在当年中的第几天
+			return d1 + d2;
+		}
+		else if (month1 > month2)
+		{
+			int d1, d2;
+			d1 = DayInYear(year1, month1, day1);
+			d2 = DayInYear(year2, month2, day2);
+			return d1 - d2;
+		}
+		else if (month1 < month2)
+		{
+			int d1, d2;
+			if (IsLeap(year2))
+				d2 = 366 - DayInYear(year2, month2, day2); //取得这个日期在该年还于下多少天
+			else
+				d2 = 365 - DayInYear(year2, month2, day2);
+			d1 = DayInYear(year1, month1, day1); //取得在当年中的第几天
+			return d1 + d2;
 		}
 	}
 };

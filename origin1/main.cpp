@@ -29,9 +29,12 @@ int main()
 	cout << "日";
 	cin >> day2;
 	int a = N.DaysBetween2Day(year1, month1, day1, year2, month2, day2);
-	int b = N.DaysBetween2Day(year2, month1, day1, year2, month2, day2);
-	cout << "您已经出生 " << a << " 天";
-	cout << "距离下一个生日还有 " << b << " 天";
+	int b = N.NextBirthday(year2, month1, day1, year2, month2, day2);
+	if (a != 0)
+	{
+		cout << "您已经出生 " << a << " 天" << endl;
+		cout << "距离下一个生日还有 " << b << " 天" << endl;
+	}
 	system("pause");
 	return 0;
 }
