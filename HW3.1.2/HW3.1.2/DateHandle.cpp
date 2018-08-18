@@ -1,8 +1,7 @@
-#pragma once
 #include "pch.h"
-#include "pch.cpp"
 #include <iostream>
 using namespace std;
+//DateHandle 用于处理日期计算，判断闰年、计算两个日期相隔天数，计算下个生日相距时间
 class DateHandle
 {
 public:
@@ -119,4 +118,3 @@ public:
 		}
 	}
 };
-

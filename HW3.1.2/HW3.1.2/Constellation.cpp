@@ -1,8 +1,7 @@
-#pragma once
 #include "pch.h"
-#include "pch.cpp"
 #include <iostream>
 using namespace std;
+// constellationÓÃÓÚÅĞ¶ÏĞÇ×ù
 class Constellation
 {
 public:
@@ -56,7 +55,7 @@ public:
 			}
 			else
 			{
-				ran =1;
+				ran = 1;
 				cout << "°×Ñò×ù";
 			}
 			break;

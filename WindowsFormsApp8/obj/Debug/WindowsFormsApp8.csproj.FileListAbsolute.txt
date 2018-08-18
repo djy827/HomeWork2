@@ -21,3 +21,6 @@ C:\Users\章晶明\source\repos\WindowsFormsApp8\HomeWork3\WindowsFormsApp8\obj\
 C:\Users\章晶明\Desktop\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.csprojAssemblyReference.cache
 C:\Users\章晶明\Desktop\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.exe
 C:\Users\章晶明\Desktop\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.pdb
+D:\Desktop\hwadd\HomeWork3\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.csprojAssemblyReference.cache
+D:\Desktop\hwadd\HomeWork3\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.exe
+D:\Desktop\hwadd\HomeWork3\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.pdb

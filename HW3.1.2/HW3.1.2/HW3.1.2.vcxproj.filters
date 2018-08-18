@@ -18,22 +18,28 @@
     <ClInclude Include="pch.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Constellation.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="DateHandle.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="HW3.1.2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Constellation.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
     <ClCompile Include="DateHandle.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="FateTeller.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Outfile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
   </ItemGroup>
 </Project>
